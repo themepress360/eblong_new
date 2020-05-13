@@ -55,6 +55,9 @@ Route::get(
 )->name('home');
 
 
+Route::get('/sendemail', 'SendMailController@index');
+Route::post('/sendemail/send', 'SendMailController@send');
+
 
 Route::get('articles/{category?}', 'ArticleController@articlesList')->name('articlesList');
 Route::get('article/{slug}', 'ArticleController@showArticle')->name('showArticle');

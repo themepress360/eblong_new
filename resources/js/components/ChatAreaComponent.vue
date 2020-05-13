@@ -31,7 +31,7 @@ import Event from '../event.js';
                 newmessage: '',
                 messages: [],
                 receiver: '',
-                socket : io('http://37.111.136.134:3001'),
+                socket : io('http://52.87.199.242:2020'),
                 chat_start: false,
                 no_record_img: APP_URL+'/images/message-img.png',
                 typing: false,
@@ -103,6 +103,7 @@ import Event from '../event.js';
             jQuery('.wt-chatarea').linkify({target: "_blank"});
         },
         created(){
+            console.log('http://'+document.domain+':2020');
             this.socket.emit("add-user", {"userId": Laravel.user.id}); 
         }
     }

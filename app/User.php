@@ -65,7 +65,7 @@ class User extends Authenticatable
         parent::boot();
         static::created(
             function ($user) {
-                Event::fire('user.created', $user);
+                //Event::fire('user.created', $user);
             }
         );
     }

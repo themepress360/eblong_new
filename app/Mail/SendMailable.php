@@ -33,7 +33,7 @@ class SendMailable extends Mailable
     public function build()
     {
       //   return $this->view('name');
-      return $this->from('Themepress360@gmail.com')->subject('Test Email')->view('dynamic_email_template')->with('data', $this->data);
+      return $this->from('adeel@ebelong.com')->subject('Test Email')->view('dynamic_email_template')->with('data', $this->data);
        
     }
 }

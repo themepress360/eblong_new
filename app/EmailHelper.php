@@ -30,7 +30,7 @@ class EmailHelper extends Model
     {
         ob_start();
         $setting = SiteManagement::getMetaValue('email_data');
-        $email_banner = !empty($setting) && !empty($setting[0]['email_banner']) ? url('uploads/settings/general/1585698705-ebelong.png'.$setting[0]['email_banner']): '';
+        $email_banner = !empty($setting) && !empty($setting[0]['email_banner']) ? url('uploads/settings/general/1587744709-1585698705-ebelong.png'.$setting[0]['email_banner']): '';
         ?>
         <div style="min-width:100%;background-color:#f6f7f9;margin:0;width:100%;color:#283951;font-family:'Helvetica','Arial',sans-serif;padding: 60px 0;">
         <div style="background: #FFF;max-width: 600px; width: 100%; margin: 0 auto; overflow: hidden; color: #919191; font:400 16px/26px 'Open Sans', Arial, Helvetica, sans-serif;">
